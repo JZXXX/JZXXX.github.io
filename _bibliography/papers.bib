@@ -1,84 +1,175 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
+@article{semi,
+  abbr={ACL2020},
+  title={Semi-supervised semantic dependency parsing using CRF autoencoders},
+  author={Jia, Zixia and Ma, Youmi and Cai, Jiong and Tu, Kewei},
+  abstract={Semantic dependency parsing, which aims to find rich bi-lexical relationships, allows words to have multiple dependency heads, resulting in graph-structured representations. We propose an approach to semi-supervised learning of semantic dependency parsers based on the CRF autoencoder framework. Our encoder is a discriminative neural semantic dependency parser that predicts the latent parse graph of the input sentence. Our decoder is a generative neural model that reconstructs the input sentence conditioned on the latent parse graph. Our model is arc-factored and therefore parsing and learning are both tractable. Experiments show our model achieves significant and consistent improvement over the supervised baseline.},
+  journal={Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  pages={6795--6805},
+  year={2020},
+  month={July},
+  url={https://acl2020.org/},
+  html={https://aclanthology.org/2020.acl-main.607.pdf},
   dimensions={true},
   selected={true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+
+
+@article{modeling,
+  abbr={ACL2023},
+  title={Modeling Instance Interactions for Joint Information Extraction with Neural High-Order Conditional Random Field},
+  author={Jia, Zixia and Yan, Zhaohui and Han, Wenjuan, Zheng, Zilong and Tu, Kewei},
+  abstract={Prior works on joint Information Extraction
+(IE) typically model instance (e.g., event triggers, entities, roles, relations) interactions by
+representation enhancement, type dependencies scoring, or global decoding. We find that
+the previous models generally consider binary
+type dependency scoring of a pair of instances,
+and leverage local search such as beam search
+to approximate global solutions. To better integrate cross-instance interactions, in this work,
+we introduce a joint IE framework (CRFIE)
+that formulates joint IE as a high-order Conditional Random Field. Specifically, we design
+binary factors and ternary factors to directly
+model interactions between not only a pair of
+instances but also triplets. Then, these factors
+are utilized to jointly predict labels of all instances. To address the intractability problem
+of exact high-order inference, we incorporate
+a high-order neural decoder that is unfolded
+from a mean-field variational inference method,
+which achieves consistent learning and inference. The experimental results show that our
+approach achieves consistent improvements on
+three IE tasks compared with our baseline and
+prior work.},
+  journal={Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics},
+  pages={13695--13710},
+  year={2023},
+  month={July},
+  url={https://2023.aclweb.org/},
+  html={https://aclanthology.org/2023.acl-long.766.pdf},
+  dimensions={true},
+  selected={true}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+
+
+@article{modeling,
+  abbr={AAAI2022},
+  title={Span-based semantic role labeling with argument pruning and second-order inference},
+  author={Jia, Zixia* and Yan, Zhaohui* and Wu, Haoyi and Tu, Kewei},
+  abstract={Prior works on joint Information Extraction
+(IE) typically model instance (e.g., event triggers, entities, roles, relations) interactions by
+representation enhancement, type dependencies scoring, or global decoding. We find that
+the previous models generally consider binary
+type dependency scoring of a pair of instances,
+and leverage local search such as beam search
+to approximate global solutions. To better integrate cross-instance interactions, in this work,
+we introduce a joint IE framework (CRFIE)
+that formulates joint IE as a high-order Conditional Random Field. Specifically, we design
+binary factors and ternary factors to directly
+model interactions between not only a pair of
+instances but also triplets. Then, these factors
+are utilized to jointly predict labels of all instances. To address the intractability problem
+of exact high-order inference, we incorporate
+a high-order neural decoder that is unfolded
+from a mean-field variational inference method,
+which achieves consistent learning and inference. The experimental results show that our
+approach achieves consistent improvements on
+three IE tasks compared with our baseline and
+prior work.},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+  pages={13695--13710},
+  year={2022},
+  doi={https://doi.org/10.1609/aaai.v36i10.21328},
+  url={https://aaai.org/conference/aaai/aaai-22/},
+  html={https://ojs.aaai.org/index.php/AAAI/article/view/21328},
+  dimensions={true},
+  selected={true}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+
+
+@article{modeling,
+  abbr={ACL2021},
+  title={Structural Knowledge Distillation: Tractably Distilling Information for Structured Predictor},
+  author={Wang*, Xinyu and Jiang*, Yong and Yan*, Zhaohui and Jia*, Zixia and Bach, Nguyen and Wang, Tao and Huang, Zhongqiang and Huang, Fei and Tu, Kewei},
+  abstract={Knowledge distillation is a critical technique to transfer knowledge between models, typically from a large model (the teacher) to a more fine-grained one (the student). The objective function of knowledge distillation is typically the cross-entropy between the teacher and the student’s output distributions. However, for structured prediction problems, the output space is exponential in size; therefore, the cross-entropy objective becomes intractable to compute and optimize directly. In this paper, we derive a factorized form of the knowledge distillation objective for structured prediction, which is tractable for many typical choices of the teacher and student models. In particular, we show the tractability and empirical effectiveness of structural knowledge distillation between sequence labeling and dependency parsing models under four different scenarios: 1) the teacher and student share the same factorization form of the output structure scoring function; 2) the student factorization produces more fine-grained substructures than the teacher factorization; 3) the teacher factorization produces more fine-grained substructures than the student factorization; 4) the factorization forms from the teacher and the student are incompatible.},
+  journal={Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics},
+  pages={550--564},
+  year={2021},
+  html={https://aclanthology.org/2021.acl-long.46/},
+  dimensions={true},
+  selected={true}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+
+
+@inproceedings{tan-etal-2023-damo,
+    abbr={SemEval2023},
+    title = "{DAMO}-{NLP} at {S}em{E}val-2023 Task 2: A Unified Retrieval-augmented System for Multilingual Named Entity Recognition",
+    author = "Tan*, Zeqi  and
+      Huang*, Shen  and
+      Jia*, Zixia  and
+      Cai*, Jiong  and
+      Li*, Yinghui  and
+      Lu, Weiming  and
+      Zhuang, Yueting  and
+      Tu, Kewei  and
+      Xie, Pengjun  and
+      Huang, Fei",
+    booktitle = "Proceedings of the The 17th International Workshop on Semantic Evaluation (SemEval-2023)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.semeval-1.277",
+    pages = "2014--2028",
+    abstract = "The MultiCoNER II shared task aims to tackle multilingual named entity recognition (NER) in fine-grained and noisy scenarios, and it inherits the semantic ambiguity and low-context setting of the MultiCoNER I task. To cope with these problems, the previous top systems in the MultiCoNER I either incorporate the knowledge bases or gazetteers. However, they still suffer from insufficient knowledge, limited context length, single retrieval strategy. In this paper, our team DAMO-NLP proposes a unified retrieval-augmented system (U-RaNER) for fine-grained multilingual NER. We perform error analysis on the previous top systems and reveal that their performance bottleneck lies in insufficient knowledge. Also, we discover that the limited context length causes the retrieval knowledge to be invisible to the model. To enhance the retrieval context, we incorporate the entity-centric Wikidata knowledge base, while utilizing the infusion approach to broaden the contextual scope of the model. Also, we explore various search strategies and refine the quality of retrieval knowledge. Our system wins 9 out of 13 tracks in the MultiCoNER II shared task. Additionally, we compared our system with ChatGPT, one of the large language models which have unlocked strong capabilities on many tasks. The results show that there is still much room for improvement for ChatGPT on the extraction task.",
+}
+
+@inproceedings{zhang2022sharp,
+  abbr={NAACL2022},
+  title={SHARP: Search-Based Adversarial Attack for Structured Prediction},
+  author={Zhang*, Liwen and Jia*, Zixia and Han*, Wenjuan and Zheng, Zilong and Tu, Kewei},
+  booktitle={Findings of the Association for Computational Linguistics: NAACL 2022},
+  pages={950--961},
+  year={2022}
+}
+
+@inproceedings{wang2022ita,
+  abbr={NAACL2022},
+  title={ITA: Image-Text Alignments for Multi-Modal Named Entity Recognition},
+  author={Wang, Xinyu and Gui, Min and Jiang, Yong and Jia, Zixia and Bach, Nguyen and Wang, Tao and Huang, Zhongqiang and Tu, Kewei},
+  booktitle={Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  pages={3176--3189},
+  year={2022}
+}
+
+@inproceedings{yan2022empirical,
+  abbr={AACL2022},
+  title={An Empirical Study of Pipeline vs. Joint Approaches to Entity and Relation Extraction},
+  author={Yan*, Zhaohui and Jia*, Zixia and Tu, Kewei},
+  booktitle={Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing},
+  pages={437--443},
+  year={2022}
+}
+
+@inproceedings{wang2021enhanced,
+  abbr={IWPT2021},
+  title={Enhanced Universal Dependency Parsing with Automated Concatenation of Embeddings},
+  author={Wang*, Xinyu and Jia*, Zixia and Jiang, Yong and Tu, Kewei},
+  booktitle={Proceedings of the 17th International Conference on Parsing Technologies and the IWPT 2021 Shared Task on Parsing into Enhanced Universal Dependencies (IWPT 2021)},
+  pages={189--195},
+  year={2021}
+}
+
+@inproceedings{wang2019shanghaitech,
+  abbr={CoNLL2019},
+  title={ShanghaiTech at MRP 2019: Sequence-to-Graph Transduction with Second-Order Edge Inference for Cross-Framework Meaning Representation Parsing},
+  author={Wang, Xinyu and Liu, Yixian and Jia, Zixia and Jiang, Chengyue and Tu, Kewei},
+  booktitle={Proceedings of the Shared Task on Cross-Framework Meaning Representation Parsing at the 2019 Conference on Natural Language Learning},
+  pages={55--65},
+  year={2019}
 }

@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2023-05-05 15:59:00-0400
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Our paper [Modeling Instance Interactions for Joint Information Extraction with Neural High-Order Conditional Random Field](https://aclanthology.org/2023.acl-long.766.pdf) was accepted to the Main Conference of ACL 2023!

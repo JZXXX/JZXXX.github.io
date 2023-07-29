@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://jiazixia.github.io/sitemap.xml
+Sitemap: https://JZXXX.github.io/sitemap.xml

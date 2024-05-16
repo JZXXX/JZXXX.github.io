@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper [Combining Supervised Learning and Reinforcement Learning for Multi-Label Classification Tasks with Partial Labels] was accepted to the Main Conference of ACL 2024!
+Our paper [Combining Supervised Learning and Reinforcement Learning for Multi-Label Classification Tasks with Partial Labels](https://openreview.net/forum?id=68mAyTRyiJ) was accepted to the Main Conference of ACL 2024!

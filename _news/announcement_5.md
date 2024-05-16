@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper [LangSuit·E: Planning, Controlling and Interacting with Large Language Models in Embodied Text Environments] was accepted to the ACL 2024 Findings!
+Our paper [LangSuit·E: Planning, Controlling and Interacting with Large Language Models in Embodied Text Environments](https://openreview.net/forum?id=B3Z2c1ZGGzC) was accepted to the ACL 2024 Findings!

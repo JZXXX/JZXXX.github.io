@@ -13,7 +13,9 @@
             class="preview z-depth-1 rounded"
             alt=entry.preview -%}
           {%- endif -%}
-        {%- elsif entry.abbr -%}
+        {%- endif -%}
+        {%- if entry.abbr -%}
+          <div class="{% if entry.preview %}preview-badge{% endif %}">
           {%- if site.data.venues[entry.abbr] -%}
             {%- assign venue_style = nil -%}
             {%- if site.data.venues[entry.abbr].color != blank -%}
@@ -23,6 +25,7 @@
           {%- else -%}
             <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}
+          </div>
         {%- endif -%}
         </div>
 

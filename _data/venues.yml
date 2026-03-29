@@ -4,3 +4,31 @@
 
 "PhysRev":
   url: https://journals.aps.org/
+
+"ACL":
+  url: https://aclanthology.org/
+  color: "#1f6feb"
+
+"ACL-F":
+  url: https://aclanthology.org/venues/findings/
+  color: "#3b82f6"
+
+"EMNLP":
+  url: https://aclanthology.org/venues/emnlp/
+  color: "#0ea5a4"
+
+"EMNLP-F":
+  url: https://aclanthology.org/venues/findings/
+  color: "#14b8a6"
+
+"ICML":
+  url: https://icml.cc/
+  color: "#ef4444"
+
+"TMLR":
+  url: https://jmlr.org/tmlr/
+  color: "#7c3aed"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#6b7280"

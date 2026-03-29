@@ -591,17 +591,22 @@ footer.sticky-bottom {
       }
 
       .abbr {
-        height: 2rem;
+        height: auto;
         margin-bottom: 0.5rem;
 
         abbr {
-          display: inline-block;
-          background-color: var(--global-theme-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
+          display: inline-flex;
+          align-items: center;
+          background-color: var(--global-card-bg-color);
+          color: var(--global-text-color);
+          border: 1px solid var(--global-divider-color);
+          border-radius: 999px;
+          font-size: 0.8rem;
+          line-height: 1.2;
+          padding: 0.2rem 0.7rem;
 
           a {
-            color: white;
+            color: inherit;
 
             &:hover {
               text-decoration: none;
@@ -621,6 +626,27 @@ footer.sticky-bottom {
 
       .title {
         font-weight: bolder;
+      }
+
+      .paper-links-inline {
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        font-size: 0.88rem;
+        color: var(--global-text-color-light);
+
+        a {
+          color: var(--global-text-color-light);
+          text-decoration: none;
+
+          &:hover {
+            color: var(--global-theme-color);
+            text-decoration: underline;
+          }
+        }
+
+        .link-sep {
+          margin: 0 0.35rem;
+        }
       }
 
       .author {

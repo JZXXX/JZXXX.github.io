@@ -17,11 +17,7 @@
         {%- if entry.abbr -%}
           <div class="{% if entry.preview %}preview-badge{% endif %}">
           {%- if site.data.venues[entry.abbr] -%}
-            {%- assign venue_style = nil -%}
-            {%- if site.data.venues[entry.abbr].color != blank -%}
-              {%- assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' -%}
-            {%- endif -%}
-            <abbr class="badge" {% if venue_style %}{{venue_style}}{% endif %}><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+            <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
           {%- else -%}
             <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}
@@ -33,6 +29,46 @@
         <div id="{{entry.key}}" class="col-sm-8">
         <!-- Title -->
         <div class="title">{{entry.title}}</div>
+        {%- assign paper_url = entry.url -%}
+        {%- if paper_url == blank and entry.pdf -%}
+          {%- if entry.pdf contains '://' -%}
+            {%- assign paper_url = entry.pdf -%}
+          {%- else -%}
+            {%- assign paper_url = entry.pdf | prepend: '/assets/pdf/' | relative_url -%}
+          {%- endif -%}
+        {%- endif -%}
+        {%- assign github_url = entry.code -%}
+        {%- if github_url == blank and entry.html and entry.html contains 'github.com' -%}
+          {%- assign github_url = entry.html -%}
+        {%- endif -%}
+        {%- assign project_url = entry.website -%}
+        {%- if project_url == blank and entry.html and entry.html != paper_url -%}
+          {%- unless entry.html contains 'github.com' -%}
+            {%- assign project_url = entry.html -%}
+          {%- endunless -%}
+        {%- endif -%}
+        {%- if github_url == blank and project_url and project_url contains 'github.com' -%}
+          {%- assign github_url = project_url -%}
+          {%- assign project_url = nil -%}
+        {%- endif -%}
+        {%- if paper_url or github_url or project_url -%}
+        <div class="paper-links-inline">
+          {%- assign has_inline_link = false -%}
+          {%- if paper_url -%}
+            <a href="{{paper_url}}" rel="external nofollow noopener" target="_blank">Paper</a>
+            {%- assign has_inline_link = true -%}
+          {%- endif -%}
+          {%- if github_url -%}
+            {%- if has_inline_link -%}<span class="link-sep">|</span>{%- endif -%}
+            <a href="{{github_url}}" rel="external nofollow noopener" target="_blank">GitHub</a>
+            {%- assign has_inline_link = true -%}
+          {%- endif -%}
+          {%- if project_url -%}
+            {%- if has_inline_link -%}<span class="link-sep">|</span>{%- endif -%}
+            <a href="{{project_url}}" rel="external nofollow noopener" target="_blank">Project Page</a>
+          {%- endif -%}
+        </div>
+        {%- endif -%}
         <!-- Author -->
         <div class="author">
         {% assign author_array_size = entry.author_array | size %}
